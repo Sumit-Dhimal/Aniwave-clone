@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+}
+
+/* Top wrapper*/
+#i-top {
+    background-color: black;
+    height: 800px;
+    display: flex;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    height: 50px;
+    
+}
+
+.container ul {
+    display: flex;
+}
+
+#i-menu li {
+    align-items: center;
+    list-style-type: none;
+    padding: 3px 12px;
+}
+
+#i-menu li a{
+    color: white;    
+    text-decoration: none;
+    text-align: center;
+}
+
+#i-menu li a:hover {
+    color: purple;
+}
