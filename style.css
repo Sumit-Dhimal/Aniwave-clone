@@ -1,52 +1,123 @@
 * {
     margin: 0;
     padding: 0;
-    
 }
 
 body {
-    font-family: 'Mukta', sans-serif;
+    font-family: Nunito,Archivo,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
 }
 
 /* Top wrapper*/
 #i-top {
-    background-color: black;
-    height: 800px;
+    background-image: url(image/bg-index2.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 650px;
     display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .container {
     max-width: 850px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .logo {
     display: flex;
     justify-content: center;
+    margin: 12px 0px 15px 0px;
 }
 
 .logo img{
-    height: 50px;
-    
+    height: 60px;
 }
 
 .container ul {
     display: flex;
+    justify-content: center;
 }
 
 #i-menu li {
-    align-items: center;
     list-style-type: none;
-    padding: 3px 12px;
+    padding: 3px 14px;
 }
 
 #i-menu li a{
+    margin-top: 10px;
     color: white;    
     text-decoration: none;
     text-align: center;
 }
 
 #i-menu li a:hover {
-    color: purple;
+    color: #774EC6;
+}
+
+#search {
+    margin: 15px 0px;
+}
+
+#search form {
+    display: flex;
+}
+
+#search form button {
+    background-color: #141414;
+    font-size: 25px;
+    color: #5c5757;
+    outline: none;
+    border: none;
+}
+
+#search form button i {
+    padding: 5px 10px;
+    margin: none;
+
+}
+
+button i:hover {
+    color: #c0baba;
+    transition: 0.75sec;
+}
+
+#search form input {
+    background-color: #141414;
+    font-size: 13px;
+    border: none;
+    height: 36px;
+    width: 600px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.i-gohome {
+    background: url(image/bg-index-top1.png) center no-repeat;   
+    min-height: 450px;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.i-gohome a {
+    background-color: #F1B105;
+    color: #222;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50rem;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    padding: 0 16px;
+    font-weight: 600;
+}
+
+.i-gohome a i {
+    font-size: 2rem;
+    vertical-align: middle;
 }
