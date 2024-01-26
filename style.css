@@ -54,14 +54,17 @@ body {
 
 #i-menu li a:hover {
     color: #774EC6;
+    cursor: pointer;
 }
 
 #search {
     margin: 15px 0px;
+    display: flex;
 }
 
 #search form {
-    display: flex;
+    display: inline-flex;
+    margin: 0 auto;
 }
 
 #search form button {
@@ -70,17 +73,17 @@ body {
     color: #5c5757;
     outline: none;
     border: none;
+    margin: none;
 }
 
 #search form button i {
     padding: 5px 10px;
-    margin: none;
-
 }
 
 button i:hover {
     color: #c0baba;
     transition: 0.75sec;
+    cursor: pointer;
 }
 
 #search form input {
@@ -88,7 +91,7 @@ button i:hover {
     font-size: 13px;
     border: none;
     height: 36px;
-    width: 600px;
+    width: 500px;
     padding-left: 10px;
     outline: none;
     border: none;
@@ -105,7 +108,7 @@ button i:hover {
 }
 
 .i-gohome a {
-    background-color: #F1B105;
+    background-color: #ffc72c;
     color: #222;
     text-decoration: none;
     font-size: 1.2rem;
@@ -117,7 +120,40 @@ button i:hover {
     font-weight: 600;
 }
 
+.i-gohome a:hover {
+    background-color: #e8aa00;
+    transition: 1.5s;
+    animation: ease-in-out;
+    cursor: pointer;
+}
+
 .i-gohome a i {
     font-size: 2rem;
     vertical-align: middle;
+}
+
+#social-container {
+    width: 720px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+
+}
+
+#social-container #sc-total {
+    color: #555;
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.sc-icons {
+    background-color: rgb(7, 78, 191);
+    display: inline-flex;
+    width: 120px;
+    height: 33px;
+    border-radius: 4px;
+    color: white;
 }
