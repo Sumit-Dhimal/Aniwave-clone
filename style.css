@@ -50,11 +50,13 @@ body {
     color: white;    
     text-decoration: none;
     text-align: center;
+    transition: 0.5s;
 }
 
 #i-menu li a:hover {
     color: #774EC6;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 #search {
@@ -78,12 +80,14 @@ body {
 
 #search form button i {
     padding: 5px 10px;
+    transition: 0.5s;
 }
 
 button i:hover {
     color: #c0baba;
     transition: 0.75sec;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 #search form input {
@@ -118,11 +122,12 @@ button i:hover {
     text-align: center;
     padding: 0 16px;
     font-weight: 600;
+    transition: 0.5s;
 }
 
 .i-gohome a:hover {
     background-color: #e8aa00;
-    transition: 1.5s;
+    transition: 0.5s;
     animation: ease-in-out;
     cursor: pointer;
 }
@@ -133,27 +138,47 @@ button i:hover {
 }
 
 #social-container {
-    width: 720px;
+    width: 830px;
     display: flex;
-    justify-content: space-evenly;
     margin-top: 10px;
-
+    justify-content: space-evenly;
 }
 
 #social-container #sc-total {
     color: #555;
     display: inline-flex;
     flex-direction: column;
-    margin-right: 0;
+    margin-top: 8px;
     text-align: center;
     font-weight: 500;
+    align-items: center;
+}
+
+#sc-total span {
+    line-height: 12px;
 }
 
 .sc-icons {
-    background-color: rgb(7, 78, 191);
     display: inline-flex;
     width: 120px;
     height: 33px;
     border-radius: 4px;
     color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
+    justify-content: space-evenly;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sc-icons i {
+    font-size: 16px;
+}
+
+.sc-icons:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+ 
 }
